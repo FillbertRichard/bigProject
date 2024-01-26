@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Welcome to my Suvrvey</h1>
+    <p id="description">
+      Here is some question about my Webside, please choose one of them to make
+      this Webside better
+    </p>
+    <form action="#" method="get" id="survey-form">
+      <label for="name" id="survey-form name-label">Name</label>
+      <br />
+      <input
+        type="text"
+        id="survey-form name"
+        required
+        placeholder="Enter your name"
+      />
+      <br />
+      <label for="email" id="survey-form email-label">Email</label>
+      <br />
+      <input
+        type="text"
+        id="survey-form email"
+        required
+        placeholder="Enter your email"
+      />
+      <br />
+      <label for="number" id="survey-form number-label">Number</label>
+      <br />
+      <input
+        type="text"
+        id="survey-form number"
+        required
+        max="99"
+        min="5"
+        placeholder="Enter your number"
+      />
+      <br />
+
+      <p>Which option do you have, please selects one of them!</p>
+      <select name="option" id="survey-form dropdown">
+        <option value="1">Select your option</option>
+        <option value="2">Football</option>
+        <option value="3">Soccer</option>
+        <option value="4">Movie</option>
+        <option value="5">Batminton</option>
+      </select>
+      <br />
+
+      <p>Do you recommend for your friend about my Webside?</p>
+      <input
+        type="radio"
+        id="survey-form radio"
+        value="definitely"
+        name="definitely"
+      />Definitely
+      <br />
+      <input
+        type="radio"
+        id="survey-form radio"
+        value="maybe"
+        name="maybe"
+      />Maybe
+      <br />
+      <input
+        type="radio"
+        id="survey-form radio"
+        value="not-sure"
+        name="not-sure"
+      />Not sure
+      <br />
+
+      <p>Select one of vehicle to travel in this summer!</p>
+      <input type="checkbox" id="survey-form a" value="a" />Car
+      <br />
+      <input type="checkbox" id="survey-form b" value="b" />Ô tô
+      <br />
+      <input type="checkbox" id="survey-form c" value="c" />Xe máy
+      <br />
+      <input type="checkbox" id="survey-form d" value="d" />Tàu du lịch
+      <br />
+      <input type="checkbox" id="survey-form e" value="e" />Máy bay du lịch
+      <br />
+      <input type="checkbox" id="survey-form f" value="f" />Xe đạp
+      <br />
+      <input type="checkbox" id="survey-form g" value="g" />Xe giường nằm
+      <br />
+      <input type="checkbox" id="survey-form h" value="h" />Nằm ngủ ở nhà
+      <br />
+
+      <p>
+        If you have any question or comments about my Webside, please write
+        under here.
+      </p>
+      <textarea
+        name="text"
+        id="survey-form comment"
+        cols="auto"
+        rows="5"
+        placeholder="Enter your comments here"
+      ></textarea>
+      <br />
+
+      <button id="survey-form submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
